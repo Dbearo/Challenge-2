@@ -1,4 +1,4 @@
-:root{
+:root{      /*variables for colors */
 --white: aliceblue;
 --backround: linear-gradient(
     blue, purple );
@@ -17,7 +17,7 @@
 body{
     background-color: beige;
 }
-title
+title /*hides title at top of page*/
 {
     display: none;
 }
@@ -35,7 +35,7 @@ h3
 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+/*sets fonts for different headings*/
 header
 {
 color: var(--white);
@@ -58,11 +58,20 @@ header nav a
  
     text-decoration: none;
     
-}  
+}  /*gives header and navbar proper colors, structure, and function*/
+
+.line
+{
+border-left: 5px solid purple;
+margin-left:10%;
+margin-top:2vh;
+margin-bottom: 2vh;
+padding-left: 5vh;
+}/*adds a purple border line for style*/
 a{
     color: var(--white);
-    text-decoration: none;
-}
+   
+}/* makes text for hyperlink white*/
 .workbox
 {
     margin:2vh ;
@@ -71,12 +80,12 @@ a{
     display:flex;
     color: var(--white);
     
-}
+} /*positions boxes so that they wrap*/
 .boxhighlight{
     margin: 3vh; 
     border-radius: 15px;
     background: var(--backround);
-}
+} /*gives bockround and curves the edges of the box*/
 #Box1
 {
 flex-grow: 2;
@@ -87,7 +96,7 @@ display: flex;
 justify-content:space-between;
 color: var(--white);
 }
-
+/*makes the first box larger than the rest*/
 #Box
 {
 min-width: 40vh;
@@ -95,7 +104,8 @@ flex-grow: 2;
 flex-wrap: wrap;
 height: 25vh;
 }
-img{
+/* gives the size of the other boxes */
+#Box img{
     max-width: 100%;
     max-height: 100%;
     margin-left: 10px;
@@ -106,15 +116,11 @@ img{
   align-self:center;
   margin-right: 35%;
 }
-
-.line
-{
-border-left: 5px solid purple;
-margin-left:10%;
-margin-top:2vh;
-margin-bottom: 2vh;
-padding-left: 5vh;
+#bioImage{
+    margin-left: 5vh;
+    height: 20vh;
 }
+
 
 .boxhighlight:hover{
     transform: scale(1.1);
@@ -130,12 +136,13 @@ flex-wrap: nowrap;
 display: block;  
 }
 #Box1 img{
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 65%;
+    max-height: 65%;
  
   margin-right: 0%;
+  margin-left: 10px;
 }
-img{
+#Box img{
     margin-left: 0px;
 }
 }
