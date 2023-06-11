@@ -1,3 +1,10 @@
+:root{
+--white: aliceblue;
+--backround: linear-gradient(
+    blue, purple );
+
+}
+
 * 
 {
     margin: 0;
@@ -5,6 +12,10 @@
 
 
  display:block
+}
+
+body{
+    background-color: beige;
 }
 title
 {
@@ -18,7 +29,7 @@ h1
 h2
 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
+   margin-left: 10%; 
 }
 h3
 {
@@ -27,14 +38,11 @@ h3
 
 header
 {
-
+color: var(--white);
 display: flex;
 font-size: xx-large;
-background-color: rgb(103, 39, 117); 
 padding-left: 10px;
-background: linear-gradient(
-    blue, purple );
-    color: aliceblue;
+background: var(--backround)
 }
 
 header nav 
@@ -47,53 +55,87 @@ header nav
 header nav a
 {
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-     color: aliceblue;
+ 
     text-decoration: none;
     
+}  
+a{
+    color: var(--white);
+    text-decoration: none;
 }
-
 .workbox
 {
-flex-wrap: wrap;
+    margin:2vh ;
+    justify-content: center;
+    flex-wrap: wrap;
+    display:flex;
+    color: var(--white);
+    
 }
-
+.boxhighlight{
+    margin: 3vh; 
+    border-radius: 15px;
+    background: var(--backround);
+}
 #Box1
 {
-
+flex-grow: 2;
+font-size: xx-large;
+width: 100%;
+height: 50vh;
+display: flex;  
+justify-content:space-between;
+color: var(--white);
 }
 
-#Box2
+#Box
 {
-
+min-width: 40vh;
+flex-grow: 2;
+flex-wrap: wrap;
+height: 25vh;
 }
-
-#Box3
-{
-
+img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 10px;
 }
-
-#Box4
-{
-
-}
-
-#Box5
-{
-
+#Box1 img{
+    max-width: 80%;
+    max-height: 80%;
+  align-self:center;
+  margin-right: 35%;
 }
 
 .line
 {
-
+border-left: 5px solid purple;
+margin-left:10%;
+margin-top:2vh;
+margin-bottom: 2vh;
+padding-left: 5vh;
 }
 
-/* .lineafter ::before {
-    content: "peepee";
-    position: absolute;
-    top: 0;
-    left: 50%; 
-    transform: translateX(-50%);
-    width: 1px; 
-    height: 100%; 
-    background-color: black;
-  } */
+.boxhighlight:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 619px) {
+#Box{
+min-width: 150px;
+flex-wrap: nowrap;
+}
+#Box1
+{
+display: block;  
+}
+#Box1 img{
+    max-width: 50%;
+    max-height: 50%;
+ 
+  margin-right: 0%;
+}
+img{
+    margin-left: 0px;
+}
+}
