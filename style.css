@@ -36,6 +36,9 @@ h3
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /*sets fonts for different headings*/
+li{
+    font-size: larger;
+}
 header
 {
 color: var(--white);
