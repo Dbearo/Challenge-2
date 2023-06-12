@@ -47,7 +47,11 @@ font-size: xx-large;
 padding-left: 10px;
 background: var(--backround)
 }
-
+footer{
+    background: var(--backround);
+    height: 100px;
+    
+}
 header nav 
 {
     
